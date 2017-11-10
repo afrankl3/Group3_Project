@@ -1,5 +1,7 @@
 package com.event;
 
+import com.room.Room;
+
 import java.util.Date;
 
 public class Event {
@@ -39,4 +41,5 @@ public class Event {
     public void setTime(Date time) {
         this.time = time;
     }
+
 }
