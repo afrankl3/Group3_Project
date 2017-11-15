@@ -32,8 +32,7 @@ public class DropDownSample extends Application {
 
         );
         dropDown.setValue("Buildings");
-        //System.out.println(dropDown.getValue());
-
+        
         GridPane gridPane= new GridPane();
         gridPane.setVgap(4);
         gridPane.setHgap(10);
