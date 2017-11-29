@@ -35,9 +35,21 @@ public void signUp() {
     }
 }
 public void deleteUserAccount(){
-    return userList.remove();
+    return userList.getUserName().remove();
 }
 public void deleteAdminAccount(){
-    return adminList.remove();
+    return adminList.getUserName().remove();
+}
+public static void removeUser(){
+    Iterator<User> iterate = userList.iterator();
+    if (isAdmin == true){
+        while(itr.hasNext()){
+            User element = (User) itr.next();
+            if(element.getUserName().equals(username)){
+                itr.remove();
+            }
+        }
+
+    }
 }
 }

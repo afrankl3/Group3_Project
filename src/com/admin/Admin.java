@@ -5,11 +5,10 @@ import com.user.User;
 public class Admin extends User{
     boolean isAdmin = false;
 
-    public boolean areAmin(){
+    public boolean areAmin() {
         if (getUserName().contains("@umw.edu")) {
             return isAdmin = true;
-        }
-        else {
+        } else {
             return isAdmin = false;
         }
     }
