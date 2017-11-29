@@ -18,22 +18,26 @@ public class Account {
     
 /** Remember to output the list into a file*/
 
-public void signUp(){
+public void signUp() {
     java.util.Scanner input = new java.util.Scanner(System.in);
     System.out.println("Enter your account name");
-    String username=input.next();
+    String username = input.next();
     System.out.println("Enter your password");
-    String password=input.next();
-    if (username.contains("mail.umw.edu")){
-        User newUser =new User(username,password);
+    String password = input.next();
+    if (username.contains("mail.umw.edu")) {
+        User newUser = new User(username, password);
         userList.add(newUser);
-    }
-    else if(username.contains("umw.edu")){
-        Admin newAdmin = new Admin(username,password);
+    } else if (username.contains("umw.edu")) {
+        Admin newAdmin = new Admin(username, password);
         adminList.add(newAdmin);
-    }
-    else{
+    } else {
         System.out.println("Invalid UMW Login");
     }
+}
+public void deleteUserAccount(){
+    return userList.remove();
+}
+public void deleteAdminAccount(){
+    return adminList.remove();
 }
 }

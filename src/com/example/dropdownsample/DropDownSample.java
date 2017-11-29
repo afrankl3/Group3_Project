@@ -32,7 +32,7 @@ public class DropDownSample extends Application {
 
         );
         dropDown.setValue("Buildings");
-        
+
         GridPane gridPane= new GridPane();
         gridPane.setVgap(4);
         gridPane.setHgap(10);
