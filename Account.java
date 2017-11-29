@@ -37,9 +37,12 @@ public void signUp() {
 public void deleteUserAccount(){
     return userList.getUserName().remove();
 }
+
 public void deleteAdminAccount(){
     return adminList.getUserName().remove();
 }
+
+
 public static void removeUser(){
     Iterator<User> iterate = userList.iterator();
     if (isAdmin == true){
