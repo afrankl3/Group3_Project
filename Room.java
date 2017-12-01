@@ -7,8 +7,14 @@ public class Room extends Event {
     int seats;
     boolean equiptment;
     boolean available;
-    
-    
+
+    public Room(String RName, int seats, boolean equiptment, boolean available) {
+        this.RName = RName;
+        this.seats = seats;
+        this.equiptment = equiptment;
+        this.available = available;
+    }
+
     public String getRName(){
        return RName; 
     }
