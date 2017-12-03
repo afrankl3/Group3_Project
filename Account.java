@@ -36,6 +36,7 @@ public void signUp() {
 }
 public void deleteUserAccount(){
     return userList.getUserName().remove();
+    
 }
 
 public void deleteAdminAccount(){
@@ -49,10 +50,35 @@ public static void removeUser(){
         while(itr.hasNext()){
             User element = (User) itr.next();
             if(element.getUserName().equals(username)){
-                itr.remove();
+                itr.remove(username, password);
+                
             }
         }
 
     }
+public static void removeUser(){
+   Iterator<User> iterate = userList.iterator();
+   int len= userList.length();
+   if(isAdmin == true){
+   for(int i=0; i<len; i++){
+      if(element.getUserName().equals(username)){
+         itr.remove(username, password);
+      }
+   }
+   
+public static void removeUser(){
+if(isAdmin == true){
+for(User user : userList) {
+    if (user.getUserName().equals(username)) {
+        Iterator<User> it = user.getAccounts().iterator();
+        while(it.hasNext()) {
+            User u = it.next();
+            if(u.getUserName().equals(username)) {
+                it.remove();
+                break;                            
+            }
+        }
+        break;
+        }
 }
 }
