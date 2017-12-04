@@ -20,5 +20,27 @@ public Reservation(User u, DatePick d, Room r) {
     this.user=u;
     this.date=d;
     this.room=r;
-}   
+} 
+
+public deleteRes(){
+    Iterator<Reservation> it = reservation.getReservation().iterator();
+    while(it.hasNext()){
+        if(Reservation res = it.next();
+           if(res.getReservation().equals(reservation)){
+               it.remove();
+               break;
+           }
+           }
+           break;
+           }
+public void viewReservation(){
+    if(!room.isBooked()){
+      room.setAvailability(true); 
+        break;
 }
+
+public void viewAllReservation(){
+    System.out.println(resList);
+}
+           
+           }
