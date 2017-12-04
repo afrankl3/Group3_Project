@@ -79,5 +79,13 @@ public class Room  {
             return hasEquiptment();
         }
     }
+    public void searchBuildings(){
+        for (int i =0; roomList.size()> i; i++){
+            if (roomList.getBuilding() == roomList.setBuilding){
+                return roomList.getBuilding;
+            }
+        }
+    }
+
 
 }
