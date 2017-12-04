@@ -1,69 +1,83 @@
 
 package com;
 
+import java.util.ArrayList;
 
-public class Room extends Event {
-    String RName;
-    int seats;
-    boolean equiptment;
-    boolean available;
-    boolean isFull = true;
 
-    public Room(String RName, int seats, boolean equiptment, boolean available) {
-        this.RName = RName;
-        this.seats = seats;
-        this.equiptment = equiptment;
-        this.available = available;
+public class Room  {
+    protected String RName;
+    protected int seats;
+    protected boolean equiptment;
+    protected boolean available;
+    protected int capacity;
+    protected int attendance;
+    protected String building;
+    protected boolean full;
+    public static ArrayList<Room> roomList = new ArrayList<>();
+    
+    public Room (String b, String r, int s, boolean e, boolean t){
+        seats=s;
+        building=b;
+        equiptment=e;
+        available=t;
+        RName=r;        
+    }
+            
+
+    public int getCapacity() {
+        return capacity;
     }
 
-    public String getRName() {
-        return RName;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
-
-    public void setRName(String RName) {
-        this.RName = RName;
+    
+    public String getRName(){
+       return RName; 
     }
-
-    public int getSeats() {
+    public void setRName(String RName){
+        this.RName=RName;
+    }
+    public void setBuilding(String building){
+        this.building=building;
+    }
+    public int getSeats(){
         return seats;
     }
-
-    public void setSeats(int seats) {
-        this.seats = seats;
+    public String getBuilding(){
+        return building;
     }
-
-    public boolean getEquip() {
+    public void setSeats(int seats){
+        this.seats=seats;
+    }
+    public boolean getEquip(){
         return equiptment;
     }
-
-    public void setEquip(boolean equiptment) {
-        this.equiptment = equiptment;
+    public void setEquip(boolean equiptment){
+        this.equiptment=equiptment;
     }
-
-    public boolean getAvailability() {
-        return equiptment;
+        public boolean getAvailability(){
+        return available;
     }
-
-    public void setAvailability(boolean available) {
-        this.available = available;
+    public void setAvailability(boolean available){
+        this.available=available;
     }
-    public void isFull()
-    {
-        if (room.getAvailability == false) {
-            return isFull;
-        }
-        else if (room.getAvailability == true){
-            return isFull = false;
+    public void maxAttendance(int attendance){
+        this.attendance=attendance;
+    }
+    public void isFull(){
+        if (roomList.getAvailability == true){
+            return isFull();
         }
     }
     public void hasSeats(){
-        if (room.getSeats > 0){
-            return hasSeats;
-        }
+        if (roomList.getSeats > 0)
+            return hasSeats();
     }
     public void hasEquiptment(){
-        if (room.getEquip = true){
+        if (roomList.getEquip == true){
             return hasEquiptment();
         }
     }
+
 }

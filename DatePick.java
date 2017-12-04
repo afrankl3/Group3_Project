@@ -17,8 +17,8 @@ public class DatePick {
    public static ArrayList<DatePick> dateList = new ArrayList<>(); 
     
 public DatePick(String m, int d){
-    m=month;
-    d=day;
+    month=m;
+    day=d;
 }           
    
 public String getMonth(){
