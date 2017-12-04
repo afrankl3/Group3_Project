@@ -27,6 +27,7 @@ public class RoomPickerBase extends AnchorPane {
 
     public RoomPickerBase() {
 
+        VariousMethods() various = new VariousMethods();
         splitMenuButton = new SplitMenuButton();
         menuItem = new MenuItem();
         menuItem0 = new MenuItem();
@@ -71,6 +72,7 @@ public class RoomPickerBase extends AnchorPane {
         checkBox.setText("Equiptment");
         checkBox.setOnAction((ActionEvent e) -> {
         //apply eqiptmentSearch() from VariousMethods, otherwise apply the method manually
+            various.equiptmentSearch();
         });
         textField.setLayoutX(358.0);
         textField.setLayoutY(319.0);
