@@ -56,4 +56,14 @@ public class Room extends Event {
             return isFull = false;
         }
     }
+    public void hasSeats(){
+        if (room.getSeats > 0){
+            return hasSeats;
+        }
+    }
+    public void hasEquiptment(){
+        if (room.getEquip = true){
+            return hasEquiptment();
+        }
+    }
 }
