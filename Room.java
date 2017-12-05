@@ -80,7 +80,7 @@ public class Room  {
         }
     }
     public void searchBuildings(){
-        for (int i =0; roomList.size()> i; i++){
+        for (int i =0, i< roomList.size(), i++){
             if (roomList.getBuilding() == roomList.setBuilding){
                 return roomList.getBuilding;
             }
